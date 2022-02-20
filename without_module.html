@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>without module</title>
+        <script src="scripts/library.js"></script>  // default nya kalo ga make module maka akan bisa terakses semua 
+    </head>
+
+    <body>
+        <script>
+
+            sayHello("thanos"); // ini (sampe bawah) walaupun di library nya ga di eksport tapi bisa, karena ga make module
+            sayGoodBye("thanos");
+
+            console.info(name);
+
+        </script>
+    </body>
+</html>

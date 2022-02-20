@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>class module</title>
+    </head>
+
+    <body>
+        <script type="module"> // agar from nya itu private (tidak bisa langsung akses, dia haru ada export dan import)
+            // jadi sesuatu di dalam script ini bersifat module (private), harus make export dan import untuk mengaksesnya 
+            import {default as anu} from "./scripts/default_class.js";
+
+            const una = new anu;
+            una.sayHaylo("Thanos");
+
+        </script>
+    </body>
+</html>

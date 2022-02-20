@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>default and named</title>
+    </head>
+
+    <body>
+        <script type="module">
+
+            // export default membantu javascript agar kompatibel dengan common js dan amd module system
+            
+            //import authorName, {content, title} from "./scripts/default_and_named.js";
+            import {default as address, name, age} from "./scripts/default_and_named.js";
+            // kalo 1 file isinya ada 3 sesuatu dan salah 1 nya ada default, maka cara penulisannya seperti di atas
+            console.info(address);
+            console.info(name);
+            console.info(age);
+            // bedakan antara default dan named, karena jika digabungkan kadang akan membingungkan ketika melakukan import
+
+            // sebisa mungkin selalu gunakan export named daripada export default
+
+        </script>
+    </body>
+    </body>
+</html>

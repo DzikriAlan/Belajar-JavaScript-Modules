@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>multiple</title>
+    </head>
+
+    <body>
+        <script type="module">
+            
+            import {name, sayHello, person} from "./scripts/multiple.js";
+            import {name as nama, sayHello as sayHello2, person as orang} from "./scripts/multiple2.js";
+            // as itu biar ga bentrok bray
+
+            console.info(name);
+            console.info(nama);
+
+            sayHello("Thanos");
+            sayHello2("Ultron");
+
+            const a = new person;
+            const b = new orang;
+
+            console.info(a);
+            console.info(b);
+            
+        </script>
+    </body>
+</html>

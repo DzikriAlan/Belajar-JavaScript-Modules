@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>With Module</title>
+    </head>
+
+    <body>
+        <script type="module">
+            // make type module biar ga bisa diakses (tujuannya biar bisa milih mana yang mau di export keluar, atau biar ga ada yang bentrok namanya) . type module, cara ngaksesnya make export dan import
+
+
+            import{sayHello, sayHay} from "./scripts/say.js";
+
+            sayHello("Dzikri");
+            sayHay("Alan");
+            console.info(name); // ini ga bisa karena di file say nya ga di export
+
+            // biar kita bisa menggunakan module yang sudah di berikan sebelumnya. (karena module hanya bisa digunakan di module lain). maksud penulisan type module yang ini dan sebelumnya mempunyai maksud masing masing
+        </script>
+
+    </body>
+</html>

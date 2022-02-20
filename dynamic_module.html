@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>dynamic module loading</title>
+    </head>
+
+    <body>
+        <input type="text" id="search">
+        <input type="button" id="buttonTask" value="say">
+        <script type="module">
+            document.getElementById("buttonTask").onclick = function(){
+                const name = document.getElementById("search").value;
+
+                import("./scripts/alert.js").then(function(module){
+                    module.alertHello(name);
+                })
+            }
+        </script>
+    </body>
+    </body>
+</html>

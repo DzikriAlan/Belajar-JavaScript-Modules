@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>module object</title>
+    </head>
+
+    <body>
+        <script type="module">
+            // biar ga bentrok nama dari module yang berbeda, kita bisa menggunakan module object (biar ga bentrok, bisa make alias, sama module object)
+            
+            // module object biasanya digunakan ketika kita ingin mengimport module yang sangat banyak export datanya
+            // gausah make kurawal bray langsung bintang aja (*)
+            import * as object from "./scripts/module_object.js";
+
+            console.info(object.name1);
+            console.info(object.name2);
+            console.info(object.name3);
+
+            object.sayHello("Ronaldo");
+
+            const anu = new object.person;
+            console.info(anu);
+
+        </script>
+    </body>
+    </body>
+</html>
